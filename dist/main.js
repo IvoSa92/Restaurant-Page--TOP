@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("hello"),(()=>{const e=document.querySelector("#content"),t=document.createElement("h1");t.innerHTML="Mr Taco Heaven";const n=document.createElement("img");n.src="../home.jpg",n.style.width="500px";const c=document.createElement("p");c.innerHTML="Lets taste Heaven!",e.append(t,n,c)})()})();
