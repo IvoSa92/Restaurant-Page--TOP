@@ -4,6 +4,7 @@ import { loadPage } from "./loadPage";
 import { menu } from "./menu";
 import { wipePage } from "./wipePage";
 import { home } from "./home";
+import { contact } from "./contact";
 
 const container = document.querySelector("#content");
 
@@ -19,4 +20,10 @@ let homeTab = document.querySelector(".homeButton");
 homeTab.addEventListener("click", () => {
   wipePage();
   home();
+});
+
+let contactTab = document.querySelector(".contactButton");
+contactTab.addEventListener("click", () => {
+  wipePage();
+  contact();
 });

@@ -16,6 +16,10 @@ const loadPage = () => {
   homeButton.className = "homeButton";
   homeButton.innerHTML = "Home";
 
+  const contactButton = document.createElement("button");
+  contactButton.innerHTML = "Contact";
+  contactButton.className = "contactButton";
+
   const homeImg = document.createElement("img");
   homeImg.className = "homeImg";
   homeImg.src = "../home.jpg";
@@ -23,7 +27,7 @@ const loadPage = () => {
   const p = document.createElement("p");
   p.innerHTML = "Lets taste Heaven!";
 
-  buttonContainer.append(homeButton, menuButton);
+  buttonContainer.append(homeButton, menuButton, contactButton);
   actualContainer.append(homeImg, p);
   container.append(homeHeader, buttonContainer, actualContainer);
   return { menuButton, actualContainer };
