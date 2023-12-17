@@ -15,7 +15,3 @@ const loadPage = () => {
 };
 
 export { loadPage };
-
-/* Also es geht weiter indem du die 2 buttons schreiben sollt welche 
-auf 2 weitere seiten verweisen, wenn ein button gedrückt wird dann soll der
- content verschwinden un der neue content geladen werden*/
