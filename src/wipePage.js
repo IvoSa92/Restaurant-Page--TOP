@@ -1,7 +1,7 @@
 const wipePage = () => {
   const container = document.querySelector("#content");
-  const homeContainer = document.querySelector(".homeContainer");
-  container.removeChild(homeContainer);
+  const actualContainer = document.querySelector(".actualContainer");
+  container.removeChild(actualContainer);
 };
 
 export { wipePage };

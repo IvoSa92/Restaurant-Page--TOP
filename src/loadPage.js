@@ -1,7 +1,7 @@
 const loadPage = () => {
   const container = document.querySelector("#content");
-  const homeContainer = document.createElement("div");
-  homeContainer.className = "homeContainer";
+  const actualContainer = document.createElement("div");
+  actualContainer.className = "actualContainer";
   const buttonContainer = document.createElement("div");
   buttonContainer.className = "buttonContainer";
 
@@ -24,9 +24,9 @@ const loadPage = () => {
   p.innerHTML = "Lets taste Heaven!";
 
   buttonContainer.append(homeButton, menuButton);
-  homeContainer.append(homeImg, p);
-  container.append(homeHeader, buttonContainer, homeContainer);
-  return { menuButton, homeContainer };
+  actualContainer.append(homeImg, p);
+  container.append(homeHeader, buttonContainer, actualContainer);
+  return { menuButton, actualContainer };
 };
 
 export { loadPage };

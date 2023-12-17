@@ -3,6 +3,8 @@ console.log("hello");
 import { loadPage } from "./loadPage";
 import { menu } from "./menu";
 import { wipePage } from "./wipePage";
+import { home } from "./home";
+
 const container = document.querySelector("#content");
 
 loadPage();
@@ -16,5 +18,5 @@ menuTab.addEventListener("click", () => {
 let homeTab = document.querySelector(".homeButton");
 homeTab.addEventListener("click", () => {
   wipePage();
-  loadPage();
+  home();
 });

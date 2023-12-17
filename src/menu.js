@@ -1,7 +1,7 @@
 const menu = () => {
   const container = document.querySelector("#content");
-  const menuContainer = document.createElement("div");
-  menuContainer.className = "menuContainer";
+  const actualContainer = document.createElement("div");
+  actualContainer.className = "actualContainer";
 
   const menuTitle = document.createElement("h1");
   menuTitle.innerHTML = "Burrito";
@@ -13,9 +13,9 @@ const menu = () => {
   const menuP = document.createElement("p");
   menuP.innerHTML = "Taste our delicious burritos";
 
-  menuContainer.append(menuTitle, menuImg, menuP);
+  actualContainer.append(menuTitle, menuImg, menuP);
 
-  container.append(menuContainer);
+  container.append(actualContainer);
 };
 
 export { menu };
