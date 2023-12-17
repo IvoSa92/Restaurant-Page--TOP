@@ -1,6 +1,8 @@
-import { container } from "./loadPage";
-
 const menu = () => {
+  const container = document.querySelector("#content");
+  const menuContainer = document.createElement("div");
+  menuContainer.className = "menuContainer";
+
   const menuTitle = document.createElement("h1");
   menuTitle.innerHTML = "Burrito";
 
@@ -11,7 +13,9 @@ const menu = () => {
   const menuP = document.createElement("p");
   menuP.innerHTML = "Taste our delicious burritos";
 
-  container.append(menuTitle, menuImg, menuP);
+  menuContainer.append(menuTitle, menuImg, menuP);
+
+  container.append(menuContainer);
 };
 
 export { menu };

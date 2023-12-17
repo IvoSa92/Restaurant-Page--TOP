@@ -1,9 +1,7 @@
-import { container } from "./loadPage";
-
 const wipePage = () => {
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
-  }
+  const container = document.querySelector("#content");
+  const homeContainer = document.querySelector(".homeContainer");
+  container.removeChild(homeContainer);
 };
 
 export { wipePage };

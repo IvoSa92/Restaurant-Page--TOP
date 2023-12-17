@@ -1,0 +1,17 @@
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+.homeImg {
+  width: 500px;
+}
+
+button {
+  width: 10rem;
+  margin: 2rem;
+}
