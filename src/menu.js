@@ -17,5 +17,29 @@ const menu = () => {
 
   container.append(actualContainer);
 };
-
 export { menu };
+
+/*class Menu {
+  constructor() {
+    this.container = document.querySelector("#content");
+    this.actualContainer = document.createElement("div");
+    this.actualContainer.className = "actualContainer";
+  }
+
+  createMenu(title, img, p) {
+    const menuTitle = document.createElement("h1");
+    menuTitle.innerHTML = title;
+
+    const menuImg = document.createElement("img");
+    menuImg.src = `../${img}`;
+
+    const menuP = document.createElement("p");
+    menuP.innerHTML = p;
+
+    this.actualContainer.append(menuTitle, menuImg, menuP);
+
+    this.container.append(this.actualContainer);
+  }
+}
+
+export { Menu };*/
