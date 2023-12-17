@@ -1,6 +1,6 @@
-const menu = () => {
-  const container = document.querySelector("#content");
+import { container } from "./loadPage";
 
+const menu = () => {
   const menuTitle = document.createElement("h1");
   menuTitle.innerHTML = "Burrito";
 
