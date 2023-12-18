@@ -26,13 +26,16 @@ const menu = () => {
 
   const createMenu = (title, url, p) => {
     const menuTitle = document.createElement("h1");
+    menuTitle.classList.add("menuTitle");
     menuTitle.innerHTML = title;
 
     const menuImg = document.createElement("img");
+    menuImg.classList.add("menuImg");
     menuImg.src = `../${url}`;
     menuImg.style.width = "500px";
 
     const menuP = document.createElement("p");
+    menuP.classList.add("menuP");
     menuP.innerHTML = p;
 
     actualContainer.append(menuTitle, menuImg, menuP);
@@ -41,6 +44,7 @@ const menu = () => {
   };
 
   const menu1 = createMenu("Burrito", "burrito.jpg", "Taste it");
+  const menu2 = createMenu("Enchilada", "enchilada.jpg", "Taste this also pls");
 };
 export { menu };
 

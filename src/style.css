@@ -79,3 +79,24 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
 }
+
+.menuTitle {
+  font-family: Rubik Doodle Shadow;
+  color: #dc1338;
+
+  padding: 1rem;
+  border-style: double;
+  border-radius: 5px;
+}
+
+.menuImg {
+  border-radius: 10px;
+}
+
+.menuP {
+  font-family: Rubik Doodle Shadow;
+  font-size: 2rem;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 15px;
+}
