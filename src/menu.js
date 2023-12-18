@@ -1,4 +1,4 @@
-const menu = () => {
+/*const menu = () => {
   const container = document.querySelector("#content");
   const actualContainer = document.createElement("div");
   actualContainer.className = "actualContainer";
@@ -16,6 +16,31 @@ const menu = () => {
   actualContainer.append(menuTitle, menuImg, menuP);
 
   container.append(actualContainer);
+};
+export { menu };*/
+
+const menu = () => {
+  const container = document.querySelector("#content");
+  const actualContainer = document.createElement("div");
+  actualContainer.className = "actualContainer";
+
+  const createMenu = (title, url, p) => {
+    const menuTitle = document.createElement("h1");
+    menuTitle.innerHTML = title;
+
+    const menuImg = document.createElement("img");
+    menuImg.src = `../${url}`;
+    menuImg.style.width = "500px";
+
+    const menuP = document.createElement("p");
+    menuP.innerHTML = p;
+
+    actualContainer.append(menuTitle, menuImg, menuP);
+
+    container.append(actualContainer);
+  };
+
+  const menu1 = createMenu("Burrito", "burrito.jpg", "Taste it");
 };
 export { menu };
 

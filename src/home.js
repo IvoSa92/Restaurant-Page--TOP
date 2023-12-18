@@ -8,8 +8,9 @@ const home = () => {
   homeImg.src = "../home.jpg";
 
   const p = document.createElement("p");
-  p.innerHTML = "Lets taste Heaven!";
-
+  p.innerHTML =
+    "Experience the Flavor of Mexico <br> Where Every Bite is an Adventure!";
+  p.classList.add("homeP");
   actualContainer.append(homeImg, p);
 
   container.append(actualContainer);
