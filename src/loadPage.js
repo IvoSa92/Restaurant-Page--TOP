@@ -7,6 +7,7 @@ const loadPage = () => {
 
   const homeHeader = document.createElement("h1");
   homeHeader.innerHTML = "Mr Taco Heaven";
+  homeHeader.classList.add("homeHeader");
 
   const menuButton = document.createElement("button");
   menuButton.innerHTML = "Menu";
@@ -25,7 +26,9 @@ const loadPage = () => {
   homeImg.src = "../home.jpg";
 
   const p = document.createElement("p");
-  p.innerHTML = "Lets taste Heaven!";
+  p.innerHTML =
+    "Experience the Flavor of Mexico <br> Where Every Bite is an Adventure!";
+  p.classList.add("homeP");
 
   buttonContainer.append(homeButton, menuButton, contactButton);
   actualContainer.append(homeImg, p);
