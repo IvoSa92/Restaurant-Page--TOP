@@ -23,8 +23,12 @@ const menu = () => {
   const container = document.querySelector("#content");
   const actualContainer = document.createElement("div");
   actualContainer.className = "actualContainer";
+  actualContainer.setAttribute("id", "menuContainer");
 
   const createMenu = (title, url, p) => {
+    const menuDiv = document.createElement("div");
+    menuDiv.classList.add("menuDiv");
+
     const menuTitle = document.createElement("h1");
     menuTitle.classList.add("menuTitle");
     menuTitle.innerHTML = title;
@@ -32,19 +36,27 @@ const menu = () => {
     const menuImg = document.createElement("img");
     menuImg.classList.add("menuImg");
     menuImg.src = `../${url}`;
-    menuImg.style.width = "500px";
 
     const menuP = document.createElement("p");
     menuP.classList.add("menuP");
     menuP.innerHTML = p;
 
-    actualContainer.append(menuTitle, menuImg, menuP);
+    menuDiv.append(menuTitle, menuImg, menuP);
+    actualContainer.appendChild(menuDiv);
 
     container.append(actualContainer);
   };
 
-  const menu1 = createMenu("Burrito", "burrito.jpg", "Taste it");
-  const menu2 = createMenu("Enchilada", "enchilada.jpg", "Taste this also pls");
+  const menu1 = createMenu(
+    "~Burrito~",
+    "burrito.jpg",
+    "A delicious symphony of fresh meat, beans and a salsa sauce !"
+  );
+  const menu2 = createMenu(
+    "~Enchilada~",
+    "enchilada.jpg",
+    "Taste this also pls"
+  );
 };
 export { menu };
 
